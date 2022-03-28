@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello World</title>
+	<meta charset="utf-8" />
+
+	<!-- style sheets -->
+	<link rel="stylesheet" href="css/style.css">
+
+    <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+</head>
+<body>
+
+	<div class="header">
+		Hello World
+	</div>
+	<div class="sidebar">
+		My Sidebar
+	</div>
+	<div class="content">
+		<div id="map"></div>
+	</div>
+
+    <script>
+        var map = L.map('map').setView([37.75182362029683, -122.20052434404178], 10);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        	
+
+        var marker02 = L.marker([33.80053978242228, -117.882689186454]).addTo(map)
+                .bindPopup('The Angel Stadium of Anaheim')
+                .openPopup();
+                
+        var marker = L.marker([37.75182362029683, -122.20052434404178]).addTo(map)
+                .bindPopup('The Oakland Alameda Coliseum')
+                .openPopup();
+    </script>
+
+
+
+</body>
+</html>
