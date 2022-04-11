@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Week 2 Assignment</title>
+	<meta charset="utf-8" />
+
+	<!-- style sheets -->
+	<link rel="stylesheet" href="css/style.css">
+
+    <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+</head>
+<body>
+
+	<div class="header">
+		<i>Stadiums I've been to</i> by Camille Wong
+	</div>
+	<div class="sidebar">
+		<h2> Navigation </h2>
+			<ul id="nav"></ul>
+	</div>
+	<div class="content">
+		<div id="map"></div>
+	</div>
+
+    <script>
+        
+        let marker = L.icon({
+            iconUrl: 'stadium-marker.png',
+            iconSize: [60, 60],
+        })
+
+        let data = [
+            {
+                title: 'The Oakland Alameda Coliseum',
+                description: "Home to the Oakland A's, I went to this stadium many times as a teen to watch games on fireworks night.",
+                lat: 37.75180665435585, 
+                long: -122.2003634116433,
+                url: "https://lh5.googleusercontent.com/p/AF1QipNG3JDvGHfkSKFpViYSzceA55AMP7H_BQ_O3VMC=w444-h240-k-no",
+            },
+            {
+                title: 'Estadio Azteca',
+                description: "I saw a football game here in August 2021 while visiting Mexico City.",
+                lat: 19.305151998203126,
+                long: -99.15110696588069,
+                url: 'https://lh5.googleusercontent.com/p/AF1QipPYGzXyvrer0jSzccDvWjK1gMWdK29JkwNxdKbB=w426-h240-k-no',
+            },
+            {
+                title: 'Staples Center',
+                description: "I recently saw a game here with the Lakers. Lebron is much taller than the rest of the players.",
+                lat: 34.04319247255241,
+                long: -118.26732751542133,
+                url: "https://lh5.googleusercontent.com/p/AF1QipOibv6SAgWSWlJrtMurNHKA1lPBqw52gMK2Chyh=w408-h306-k-no",
+            },
+            {
+                title: 'SoFi Stadium',
+                description: "The most futuristic stadium I've ever been to. Privately funded at $5 billion dollars, this is the most expensive stadium to date and it shows.",
+                lat: 33.953634170543246, 
+                long: -118.33902887309414,
+                url: 'https://lh5.googleusercontent.com/p/AF1QipMbfcU1KmOegQd67QHxU2oec_QXswMwz7RpW-nG=w408-h306-k-no',
+            },
+            {
+                title: 'T-Mobile Park',
+                description: "In July, I'll be going to a Blue Jays game where they'll play against the Mariners.",
+                lat: 47.59154729235125, 
+                long: -122.33248704392236,
+                url: "https://lh5.googleusercontent.com/p/AF1QipNjc-p-alwmfwAgcjaNP3u9147MtVm4V58O2tND=w552-h240-k-no",
+            }
+        ]
+        
+        var map = L.map('map').setView([37.75182362029683, -122.20052434404178], 5);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        data.forEach(function (item) {
+				let popup = L.popup().setContent(
+					"<h2>" +
+						item.title +
+						"</h2> " +
+						item.description +
+						"<br /> <br /> <img src ='" +
+						item.url +
+						"' width=100% />"
+				);
+				L.marker([item.lat, item.long], {icon: marker}).addTo(map).bindPopup(popup).openPopup();
+			});
+
+            let ul = document.getElementById("nav");
+			if (!ul) console.log("err");
+			data.forEach(renderList);
+
+			function renderList(elem, ind, arr) {
+				let li = document.createElement("li");
+				li.setAttribute("class", "item");
+
+				let heading = document.createElement("h3");
+				let desc = document.createElement("p");
+				desc.setAttribute("class" , "desc");
+				heading.innerHTML = elem.title;
+				desc.innerHTML = elem.description;
+				li.appendChild(heading);
+				li.appendChild(desc);
+
+				ul.appendChild(li);
+			}
+
+    </script>
+
+
+
+</body>
+</html>
