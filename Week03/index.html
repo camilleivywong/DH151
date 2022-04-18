@@ -15,23 +15,24 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 </head>
-<body>
+<body onload="openNav()">
 
 	<div class="header">
-		My World
+		<button class="openbtn" onclick="openNav()">☰</button> 	
+		<i>Stadiums I've been to</i> by Camille Wong
 	</div>
-	<div class="sidebar">
-		My Sidebar
+
+	<div id = "mySidebar" class="sidebar">
+		<!-- My Sidebar -->
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 	</div>
+
 	<div class="content">
-		<div id="map"></div>
+		<div id="map"></div> 
 	</div>
 
 	<!-- map javascript -->
      <script src="js/map.js"></script>
-
-
-
 
 </body>
 </html>

@@ -1,49 +1,48 @@
 // let's create some data
 let data = [
     {
-        'id': 0,
-        'title':'Osaka',
-        'lat': 34.6937,
-        'lon': 135.5023,
-        'image': 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Osaka_Castle_02bs3200.jpg/320px-Osaka_Castle_02bs3200.jpg',
-        'description': "Osaka is a large port city and commercial center on the Japanese island of Honshu. It's known for its modern architecture, nightlife and hearty street food. The 16th-century shogunate Osaka Castle, which has undergone several restorations, is its main historical landmark. It's surrounded by a moat and park with plum, peach and cherry-blossom trees. Sumiyoshi-taisha is among Japan’s oldest Shinto shrines. ― Google"
-
+        'id' : 1,
+        'title': 'The Oakland Alameda Coliseum',
+        'description': "Home to the Oakland A's, I went to this stadium many times as a teen to watch games on fireworks night.",
+        'lat': 37.75180665435585, 
+        'lon': -122.2003634116433,
+        'url': "https://lh5.googleusercontent.com/p/AF1QipNG3JDvGHfkSKFpViYSzceA55AMP7H_BQ_O3VMC=w444-h240-k-no",
     },
     {
-        'id': 1,
-        'title':'Cali',
-        'lat': 3.4516,
-        'lon': -76.5320,
-        'image': 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Pascual_Guerrero_U-20WC_2011_CMR-NZL.JPG/320px-Pascual_Guerrero_U-20WC_2011_CMR-NZL.JPG',
-        'description':"Cali is a Colombian city in the Valle del Cauca department, southwest of Bogotá. It’s known for salsa dancing and there are many clubs in the suburb of Juanchito. In Cali’s oldest quarter, the neoclassical San Pedro Cathedral houses paintings of the Quito School. Nearby is the 18th- and 19th-century San Francisco Religious Complex. La Merced Chapel is where the first mass was held after Cali was founded in 1536. ― Google"
+        'id' : 2,
+        'title': 'Estadio Azteca',
+        'description': "I saw a football game here in August 2021 while visiting Mexico City.",
+        'lat': 19.305151998203126,
+        'lon': -99.15110696588069,
+        'url': 'https://lh5.googleusercontent.com/p/AF1QipPYGzXyvrer0jSzccDvWjK1gMWdK29JkwNxdKbB=w426-h240-k-no',
     },
     {
-        'id': 2,
-        'title':'Bangkok',
-        'lat': 13.7563,
-        'lon': 100.5018,
-        'image': 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Bangkok_skytrain_sunset.jpg/320px-Bangkok_skytrain_sunset.jpg',
-        'description':"Bangkok, Thailand’s capital, is a large city known for ornate shrines and vibrant street life. The boat-filled Chao Phraya River feeds its network of canals, flowing past the Rattanakosin royal district, home to opulent Grand Palace and its sacred Wat Phra Kaew Temple. Nearby is Wat Pho Temple with an enormous reclining Buddha and, on the opposite shore, Wat Arun Temple with its steep steps and Khmer-style spire. ― Google"
+        'id' : 3,
+        'title': 'Staples Center',
+        'description': "I recently saw a game here with the Lakers. Lebron is much taller than the rest of the players.",
+        'lat': 34.04319247255241,
+        'lon': -118.26732751542133,
+        'url': "https://lh5.googleusercontent.com/p/AF1QipOibv6SAgWSWlJrtMurNHKA1lPBqw52gMK2Chyh=w408-h306-k-no",
     },
     {
-        'id': 3,
-        'title':'Tokyo',
-        'lat': 35.6762,
-        'lon': 139.6503,
-        'image':'https://www.stofficetokyo.ch/sites/default/files/styles/featured_image_840x572_/public/2019-01/icu_dronei_34ab_170430-42_r.jpg?itok=mkG94UWD',
-        'description':"Tokyo, Japan’s busy capital, mixes the ultramodern and the traditional, from neon-lit skyscrapers to historic temples. The opulent Meiji Shinto Shrine is known for its towering gate and surrounding woods. The Imperial Palace sits amid large public gardens. The city's many museums offer exhibits ranging from classical art (in the Tokyo National Museum) to a reconstructed kabuki theater (in the Edo-Tokyo Museum). ― Google"
+        'id' : 4,
+        'title': 'SoFi Stadium',
+        'description': "The most futuristic stadium I've ever been to. Privately funded at $5 billion dollars, this is the most expensive stadium to date and it shows.",
+        'lat': 33.953634170543246, 
+        'lon': -118.33902887309414,
+        'url': 'https://lh5.googleusercontent.com/p/AF1QipMbfcU1KmOegQd67QHxU2oec_QXswMwz7RpW-nG=w408-h306-k-no',
     },
     {
-        'id': 4,
-        'title':'Los Angeles',
-        'lat': 34.0522,
-        'lon': -118.2437,
-        'image':'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/UCLA_Royce_Hall.jpg/320px-UCLA_Royce_Hall.jpg',
-        'description':"Los Angeles is a sprawling Southern California city and the center of the nation’s film and television industry. Near its iconic Hollywood sign, studios such as Paramount Pictures, Universal and Warner Brothers offer behind-the-scenes tours. On Hollywood Boulevard, TCL Chinese Theatre displays celebrities’ hand- and footprints, the Walk of Fame honors thousands of luminaries and vendors sell maps to stars’ homes. ― Google"
-    },
+        'id' : 5,
+        'title': 'T-Mobile Park',
+        'description': "In July, I'll be going to a Blue Jays game where they'll play against the Mariners.",
+        'lat': 47.59154729235125, 
+        'lon': -122.33248704392236,
+        'url': "https://lh5.googleusercontent.com/p/AF1QipNjc-p-alwmfwAgcjaNP3u9147MtVm4V58O2tND=w552-h240-k-no",
+    }
 ]
 
-let map = L.map('map').setView([0,0], 3);
+let map = L.map('map').setView([0,0], 6);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -54,10 +53,17 @@ let myMarkers = L.featureGroup();
 // loop through data
 data.forEach(function(item, index){
     let marker = L.marker([item.lat,item.lon]).addTo(map)
-        .bindPopup(item.title)
+        .bindPopup(`<h2>${item.title}</h2><p>${item.description}</p><div class="image-box"><img src=${item.url} width="300" height="300"></div>`);
 
         // add data to sidebar
         $('.sidebar').append(`<div class="sidebar-item" onclick="flyToIndex(${index})">${item.title}</div>`)
+
+        $('.sidebar-item').hover(function(){
+            $(this).css('background-color', 'yellow');
+        }, function(){
+            $(this).css("background-color", "gainsboro");
+        });
+
 }); 
 
 myMarkers.addTo(map)
@@ -77,6 +83,16 @@ map.fitBounds(myMarkers.getBounds());
 function flyToIndex(index){
 	map.flyTo([data[index].lat,data[index].lon],12)
 
-//     // open the popup
-// 	myMarkers.getLayers()[index].openPopup()
+    // open the popup
+	myMarkers.getLayers()[index].openPopup()
 }
+
+function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.body.style.gridTemplateColumns = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.body.style.gridTemplateColumns= "0px";
+  }
