@@ -64,6 +64,7 @@ function mapCSV(){
 
 			// add the circleMarker to the featuregroup
             markers.addLayer(marker)
+			
 		
             // add 1990 Median Household income data
             let marker2 = L.circleMarker([item.INTPTLAT,item.INTPTLON])
@@ -74,6 +75,7 @@ function mapCSV(){
 
 			// add the circleMarker to the featuregroup
             markers2.addLayer(marker2)
+			
 
 			// add 1990 median house value
 			let marker3 = L.circleMarker([item.INTPTLAT,item.INTPTLON])
@@ -81,9 +83,8 @@ function mapCSV(){
 				this.bindPopup(`${item['CENSUSTRACT']}<br>
                                 1990 Median House Value: ${item['1990_MEDHOUSEVAL']}`).openPopup()
 			}) 
-
-		
             markers3.addLayer(marker3)
+			
 
 			// add 2020 median house value 
 			let marker4 = L.circleMarker([item.INTPTLAT,item.INTPTLON])
@@ -111,6 +112,7 @@ function mapCSV(){
 
 	// add the featuregroup to the map
     markers.addTo(map)
+	// markers2.addTo(map)
 
 
     let layers = {

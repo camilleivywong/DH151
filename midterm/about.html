@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT US</title>
+    
+	<meta charset="utf-8" />
+
+	<!-- style sheets -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- classy brew -->
+	<script src="js/classybrew.js"></script>
+
+    <!-- papaparse for csv data -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
+	<script src="js/leaflet-side-by-side.min.js"></script>
+
+	<script scr="js/leaflet-splitmap.js"></script>
+
+</head>
+<body>
+    <div class="header">
+		Stadium Spectacle
+	</div>
+	<!-- <div class="sidebar">	
+	</div> -->
+	<div class="navigation">
+		<a href="about.html">About Us</a>
+		<div class="navigation-item" onclick="flyToIndex(47.59159070622367, -122.33214372101791)">T-Mobile Park</div>
+		<div class="navigation-item" onclick="flyToIndex(37.75175575650911, -122.20055653051473)">RingCentral Coliseum</div>
+		<div class="navigation-item" onclick="flyToIndex(37.33321617153015, -121.9019898728522)">SAP Center</div>
+		<div class="navigation-item" onclick="flyToIndex(34.07405537830926, -118.23988319990595)">Dodger Stadium</div>
+	</div>
+
+    <div class="content">
+        <div class="about-section">
+        <h1>About Us</h1>
+        <p>This project opens an investigation across publicly-funded stadiums in the United States under the four major professional sport leagues –– the NBA, NFL, MLB, and NHL. Using case studies on four major U.S. stadiums: the T-Mobile Arena (Seattle, WA), Dodger Stadium (Los Angeles, CA), the SAP Center (San Jose, CA), and the RingCentral Coliseum (Oakland, CA), this project will follow the historical neighborhoods these stadiums were built in to chart their impact on the surrounding environment. It will ask not only how stadiums affect the demographics of the neighborhood –– including race, property value, and median family income, but also interrogate the sites of their construction. The purpose of this project is to analyze the neighborhood in which a stadium is built and the economic implications of public subsidies on professional sport facilities. Our method involves comparing data from the U.S. Census Bureau as well as The Home Owners’ Loan Corporation Redlining Grade Map. 
+            This detailed analysis will illustrate the long-term effects of housing segregation in the United States and critically examine the redirection of public dollars on private stadiums.</p>
+      </div>
+      
+      <h2 style="text-align:center">Our Team</h2>
+      <div class="row">
+        <!-- <div class="column"> -->
+          <div class="card">
+            <div class = "container" div style="display:inline-block; vertical-align:top;">
+                <img src="images/alex.png" alt="Alex" style="width:300px">
+            </div>
+
+            <div class="container-text" div style="display:inline-block;">
+              <h2>Alex Bezirjyan</h2>
+              <p class="title">Content Specialist</p>
+              <p>Alex is a fourth year Sociology major at UCLA who currently resides in Los Angeles California. After graduation, he plans on pursuing a career in Social Security while simultaneously running his hookah catering business. His interests lie within the realm of conservation as he lives by the biophilia hypothesis code of ethics. In his leisure, he enjoys hiking and fishing in the great outdoors.</p>
+              <!-- <p>jane@example.com</p>
+              <p><button class="button">Contact</button></p> -->
+            </div>
+          </div>
+        <!-- </div> -->
+      
+        <!-- <div class="column"> -->
+          <div class="card">
+            <img src="images/cameron.png" alt="Cameron" style="width:300px" >
+            <div class="container">
+              <h2>Cameron Jewett</h2>
+              <p class="title">Data Specialist</p>
+              <p>Cameron is a fourth year undergrad at UCLA majoring in Environmental Science, with minors in Environmental Systems and Society and Digital Humanities. She is passionate about the intersection of accessibility and sustainability in the corporate sustainability and environmental consulting worlds. In her free time she plays ultimate frisbee for the UCLA D1 Women’s team.</p>
+              <!-- <p>mike@example.com</p>
+              <p><button class="button">Contact</button></p> -->
+            </div>
+          </div>
+        <!-- </div> -->
+      
+        <!-- <div class="column"> -->
+          <div class="card">
+            <img src="images/yvonne.jpeg" alt="Yvonne Ngyuen" style="width:300px">
+            <div class="container">
+              <h2>Yvonne Ngyuen</h2>
+              <p class="title">Designer</p>
+              <p>Yvonne is a fourth year Philosophy major and Digital Humanities minor. After graduation, she plans on pursuing a graduate degree in Human and Computer Interaction. She is interested in all aspects of the human experience, particularly how human beings attempt to find meaning and value within the world.</p>
+              <!-- <p>john@example.com</p>
+              <p><button class="button">Contact</button></p> -->
+            </div>
+          </div>
+        <!-- </div> -->
+    
+        <!-- <div class="column"> -->
+            <div class="card">
+              <img src="images/camille.png" alt="Camille" style="width:300px">
+              <div class="container">
+                <h2>Camille Wong</h2>
+                <p class="title">Project Manager</p>
+                <p>Camille is a first year MFA student in the Design Media Arts Department within the School of the Arts and Architecture. They hold B.A.s in Art and Environmental Studies from the University of California, Santa Barbara. They are a research-based artist invested in finding invisible dynamics of power embedded in technologies, social infrastructures, and the built environment. Their approach spans interactive websites, experimental video, sculpture, and writing, to reveal the extensive influence of power obscured within the texture of social spaces. Drawing from disciplines within digital humanities, urbanism, and experimental geography, their work observes how humans produce that space that in turn, shapes them.</p>
+                <!-- <p>mike@example.com</p>
+                <p><button class="button">Contac    t</button></p> -->
+              </div>
+            </div>
+          <!-- </div> -->
+    
+          <div class="footer">
+        </div>
+      </div>  
+    </div>  
+</body>
+</html>
+

@@ -4,6 +4,11 @@ body,html {
 	width:100%;
 }
 
+a {
+	text-decoration: none;
+	color: white;
+}
+
 #map {
 	height: 100%;
 }
@@ -87,3 +92,47 @@ body {
 	padding:10px;
 	background-color: rgb(175, 175, 175);
 }
+
+*, *:before, *:after {
+	box-sizing: inherit;
+  }  
+
+/* .column {
+	float: left;
+	width: 25%;
+	margin-bottom: 16px;
+	padding: 0 8px;
+  } */
+
+  .card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin: 8px;
+  }
+  
+  .about-section {
+	padding: 10px;
+	text-align: center;
+	background-color: #555;
+	color: white;
+  }
+
+  .container {
+	padding: 0 16px;
+	display: inline-block;
+	/* display: flex;
+	align-items: center; */
+	/* float: left; */
+	
+  }
+  
+  .container::after, .row::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+
+.container-text {
+	display: inline-block;
+}
+
+  
