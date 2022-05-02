@@ -126,7 +126,7 @@ function mapCSV(){
     L.control.layers(null,layers).addTo(map)
 
 	// add side by side comparison
-	L.control.sideBySide(markers, markers2).addTo(map);
+	// L.control.sideBySide(markers, markers2).addTo(map);
 
 	// fit the circleMarkers to the map view
     map.fitBounds(markers.getBounds())
