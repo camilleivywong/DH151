@@ -2,8 +2,8 @@
 let map;
 let lat = 47.60923991706992;
 let lon = -122.32353071793634;
-let zl = 11.4;
-let path = 'data/seattleXLClean.csv';
+let zl = 12;
+let path = 'data/SeattleXLClean.csv';
 let markers = L.featureGroup();
 let markers2 = L.featureGroup();
 
