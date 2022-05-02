@@ -6,6 +6,8 @@ let zl = 12;
 let path = 'data/SeattleXLClean.csv';
 let markers = L.featureGroup();
 let markers2 = L.featureGroup();
+let markers3 = L.featureGroup();
+let markers4 = L.featureGroup();
 
 let csvdata;
 
@@ -56,13 +58,12 @@ function mapCSV(){
             let marker = L.circleMarker([item.INTPTLAT,item.INTPTLON])
             .on('mouseover',function(){
 				this.bindPopup(`${item['CENSUSTRACT']}<br>
+								King County <br>
                                 2020 Median Household Income: ${item['2020_MEDHOUSEINC']}`).openPopup()
 			}) // show data on hover
 
 			// add the circleMarker to the featuregroup
             markers.addLayer(marker)
-
-            $('.sidebar').append(`<p>${item['CENSUSTRACT']}<br>2020 Median Household Income: ${item['2020_MEDHOUSEINC']}</p>`)
 		
             // add 1990 Median Household income data
             let marker2 = L.circleMarker([item.INTPTLAT,item.INTPTLON])
@@ -73,7 +74,39 @@ function mapCSV(){
 
 			// add the circleMarker to the featuregroup
             markers2.addLayer(marker2)
+
+			// add 1990 median house value
+			let marker3 = L.circleMarker([item.INTPTLAT,item.INTPTLON])
+            .on('mouseover',function(){
+				this.bindPopup(`${item['CENSUSTRACT']}<br>
+                                1990 Median House Value: ${item['1990_MEDHOUSEVAL']}`).openPopup()
+			}) 
+
+		
+            markers3.addLayer(marker3)
+
+			// add 2020 median house value 
+			let marker4 = L.circleMarker([item.INTPTLAT,item.INTPTLON])
+            .on('mouseover',function(){
+				this.bindPopup(`${item['CENSUSTRACT']}<br>
+                                2020 Median House Value: ${item['2020_MEDHOUSEVAL']}`).openPopup()
+			}) 
+
+		
+            markers4.addLayer(marker4)
+
+			// $('.sidebar').append(`<p>${item['CENSUSTRACT']}<br>2020 Median Household Income: ${item['2020_MEDHOUSEINC']}</p>`)
+			
+			$('.sidebar').append(`<div class="sidebar-item" onclick="flyToIndex(${index})">${item.CENSUSTRACT}</div>`)
+
+			$('.sidebar-item').hover(function(){
+				$(this).css('background-color', 'yellow');
+			}, function(){
+				$(this).css("background-color", "#f1f1f1");
+			});
+
         } // end if
+
 	})
 
 	// add the featuregroup to the map
@@ -81,33 +114,32 @@ function mapCSV(){
 
 
     let layers = {
-        "Median Household Income 2020" : markers,
-        "Median Household Income 1990" : markers2
-    }
+        "Median Household Income in 2020" : markers,
+        "Median Household Income in 1990" : markers2,
+		"Median House Value in 1990" : markers3,
+		"Median House Value in 2020" : markers4
+     }
     
     // add layer control box
     L.control.layers(null,layers).addTo(map)
+
+	// add side by side comparison
+	L.control.sideBySide(markers, markers2).addTo(map);
 
 	// fit the circleMarkers to the map view
     map.fitBounds(markers.getBounds())
 }
 
 
-// function mapCSV(){
-//     csvdata.data.forEach(function(item, index){
-//         let medInc2020 = L.circleMarker([item.INTPTLAT,item.INTPTLON])
-//         .on('mouseover',function(){
-//             this.bindPopup(`${item['CENSUSTRACT']}<br>
-//                             2020 Median Household Income: ${item['2020_MEDHOUSEINC']}`).openPopup()
-//         })
 
-//         markers.addLayer(medInc2020)
-//     })  
-// }
+function flyToIndex(lat,lon){
+	map.flyTo([lat,lon],12)
+	// map.flyTo([].INTPTLAT,data[indexdata[index].INTPTLON],12)
 
-// function flyToIndex(lat, lon){
-// 	map.flyTo([lat,lon],14)
-// };
+    // // open the popup
+	// myMarkers.getLayers()[index].openPopup()
+};
+
 
 
 // function createSidebarButtons(){

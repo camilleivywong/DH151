@@ -19,15 +19,22 @@
 
     <!-- papaparse for csv data -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
+	<script src="js/leaflet-side-by-side.min.js"></script>
     
 </head>
 <body>
 
 	<div class="header">
-		World Choropleth
+		Stadium Spectacle
 	</div>
-	<div class="sidebar">
-		
+	<div class="sidebar">	
+	</div>
+	<div class="navigation">
+		<div class="navigation-item" onclick="flyToIndex(47.59159070622367, -122.33214372101791)">T-Mobile Park</div>
+		<div class="navigation-item" onclick="flyToIndex(37.75175575650911, -122.20055653051473)">RingCentral Coliseum</div>
+		<div class="navigation-item" onclick="flyToIndex(37.33321617153015, -121.9019898728522)">SAP Center</div>
+		<div class="navigation-item" onclick="flyToIndex(34.07405537830926, -118.23988319990595)">Dodger Stadium</div>
 	</div>
 	<div class="content">
 		<div id="map"></div>

@@ -10,28 +10,72 @@ body,html {
 
 body {
 	display: grid;
-	grid-template-rows: 60px 1fr 40px;
+	grid-template-rows: 60px 60px 1fr 40px;
 	grid-template-columns: 300px 1fr;
 	grid-template-areas: 
 	"header header"
+	"navigation navigation"
 	"sidebar content"
 	"footer footer";
 }
 
 .header {
 	grid-area: header;
+	text-align: center;
 	padding:10px;
 	background-color: #333;
 	color: white;
 	font-size: 2em;
 }
 
-.sidebar {
+.navigation {
+	grid-area: navigation;
+	text-align: center;
+	display: inline-block;
+	padding:10px;
+	background-color: #333;
 	color: white;
+	font-size: 1em;
+}
+
+.navigation-item{
+	display: inline-block;
+	padding: 2px;
+	margin: 10px;
+	text-align: center;
+}
+
+.navigation-item a:hover{
+	color: #818181;
+	background-color: #818181;
+}
+
+.sidebar {
+	color: #555;
 	grid-area: sidebar;
 	padding:10px;
 	background-color: #555;
 	overflow: auto;
+}
+
+.sidebar a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidebar a:hover {
+	color: #f1f1f1;
+}
+
+.sidebar-item {
+    padding: 10px; /* adds inner padding */
+    background: gainsboro; 
+    border: 1px solid gray; /* border width, style, and color */
+    margin: 5px; /* outer padding */
 }
 
 .content {
