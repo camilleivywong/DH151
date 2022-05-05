@@ -48,6 +48,14 @@ function readCSV(path){
 
 function mapCSV(){
 
+	let circleOptions = {
+		radius: 7,
+		weight: 1,
+		color: 'white',
+		fillColor: 'dodgerblue',
+		fillOpacity: 1
+	}
+
 	// loop through every row in the csv data
 	csvdata.data.forEach(function(item, index){
 		// check to make sure the Latitude column exists
@@ -55,7 +63,7 @@ function mapCSV(){
 
 			// Lat exists, so create a circleMarker for each country
             // add 2020 median household income data
-            let marker = L.circleMarker([item.INTPTLAT,item.INTPTLON])
+            let marker = L.circleMarker([item.INTPTLAT,item.INTPTLON], circleOptions)
             .on('mouseover',function(){
 				this.bindPopup(`${item['CENSUSTRACT']}<br>
 								King County <br>
@@ -133,12 +141,19 @@ function mapCSV(){
 }
 
 
+
+function navFlyToIndex(lat,lon){
+	map.flyTo([lat,lon],12)
+	// map.flyTo([].INTPTLAT,data[indexdata[index].INTPTLON],12)
+
+    // // open the popup
+	// myMarkers.getLayers()[index].openPopup()
+};
+
 function flyToIndex(index){
 	map.setZoom(17);
 	map.flyTo(markers.getLayers()[index]._latlng);
 }
-
-
 
 // function createSidebarButtons(){
 
