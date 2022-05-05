@@ -133,14 +133,10 @@ function mapCSV(){
 }
 
 
-
-function flyToIndex(lat,lon){
-	map.flyTo([lat,lon],12)
-	// map.flyTo([].INTPTLAT,data[indexdata[index].INTPTLON],12)
-
-    // // open the popup
-	// myMarkers.getLayers()[index].openPopup()
-};
+function flyToIndex(index){
+	map.setZoom(17);
+	map.flyTo(markers.getLayers()[index]._latlng);
+}
 
 
 
