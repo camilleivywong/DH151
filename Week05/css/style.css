@@ -11,7 +11,7 @@ body,html {
 body {
 	display: grid;
 	grid-template-rows: 80px 1fr 50px;
-	grid-template-columns: 50% 50%;
+	grid-template-columns: 300px 1fr;
 	grid-template-areas: 
 	"header header"
 	"sidebar content"
@@ -27,11 +27,31 @@ body {
 }
 
 .sidebar {
-	color: white;
+	color: #555;
 	grid-area: sidebar;
 	padding:10px;
 	background-color: #555;
 	overflow: auto;
+}
+
+.sidebar a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidebar a:hover {
+	color: #f1f1f1;
+}
+
+.sidebar-item {
+    padding: 10px; /* adds inner padding */
+    background: gainsboro; 
+    border: 1px solid gray; /* border width, style, and color */
+    margin: 5px; /* outer padding */
 }
 
 .content {
