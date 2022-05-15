@@ -1,0 +1,1402 @@
+[
+ {
+   "CENSUSTRACT": "Census Tract 4001",
+   "MEDIANINCOME": "$236,705",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 400100,
+   "GEOID": 6001400100,
+   "LAT": 37.8676563,
+   "LON": -122.2318813
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4002",
+   "MEDIANINCOME": "$242,188",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 400200,
+   "GEOID": 6001400200,
+   "LAT": 37.8481378,
+   "LON": -122.2495916
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4003",
+   "MEDIANINCOME": "$191,838",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 400300,
+   "GEOID": 6001400300,
+   "LAT": 37.8405841,
+   "LON": -122.2544782
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4004",
+   "MEDIANINCOME": "$211,140",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 400400,
+   "GEOID": 6001400400,
+   "LAT": 37.848284,
+   "LON": -122.2574447
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4005",
+   "MEDIANINCOME": "$132,644",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 400500,
+   "GEOID": 6001400500,
+   "LAT": 37.8485452,
+   "LON": -122.2647353
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4006",
+   "MEDIANINCOME": "$114,408",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 400600,
+   "GEOID": 6001400600,
+   "LAT": 37.8419909,
+   "LON": -122.2648882
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4007",
+   "MEDIANINCOME": "$92,738",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 400700,
+   "GEOID": 6001400700,
+   "LAT": 37.8417021,
+   "LON": -122.2722661
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4008",
+   "MEDIANINCOME": "$96,250",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 400800,
+   "GEOID": 6001400800,
+   "LAT": 37.8454176,
+   "LON": -122.2832338
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4009",
+   "MEDIANINCOME": "$93,092",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 400900,
+   "GEOID": 6001400900,
+   "LAT": 37.8394083,
+   "LON": -122.2802601
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4010",
+   "MEDIANINCOME": "$109,063",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 401000,
+   "GEOID": 6001401000,
+   "LAT": 37.8312043,
+   "LON": -122.2718866
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4011",
+   "MEDIANINCOME": "$123,750",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 401100,
+   "GEOID": 6001401100,
+   "LAT": 37.8304839,
+   "LON": -122.2638399
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4012",
+   "MEDIANINCOME": "$130,197",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 401200,
+   "GEOID": 6001401200,
+   "LAT": 37.8306009,
+   "LON": -122.2579159
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4013",
+   "MEDIANINCOME": "$92,422",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 401300,
+   "GEOID": 6001401300,
+   "LAT": 37.8181386,
+   "LON": -122.2667055
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4014",
+   "MEDIANINCOME": "$45,313",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 401400,
+   "GEOID": 6001401400,
+   "LAT": 37.8207423,
+   "LON": -122.273409
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4015",
+   "MEDIANINCOME": "$79,219",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 401500,
+   "GEOID": 6001401500,
+   "LAT": 37.8229286,
+   "LON": -122.2806336
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4016",
+   "MEDIANINCOME": "$60,179",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 401600,
+   "GEOID": 6001401600,
+   "LAT": 37.8173713,
+   "LON": -122.2814822
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4017",
+   "MEDIANINCOME": "$131,477",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 401700,
+   "GEOID": 6001401700,
+   "LAT": 37.8211635,
+   "LON": -122.3187951
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4018",
+   "MEDIANINCOME": "$75,357",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 401800,
+   "GEOID": 6001401800,
+   "LAT": 37.8095098,
+   "LON": -122.2982554
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4022",
+   "MEDIANINCOME": "$58,224",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 402200,
+   "GEOID": 6001402200,
+   "LAT": 37.8063264,
+   "LON": -122.296219
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4024",
+   "MEDIANINCOME": "$33,298",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 402400,
+   "GEOID": 6001402400,
+   "LAT": 37.8120305,
+   "LON": -122.2824576
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4025",
+   "MEDIANINCOME": "$44,712",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 402500,
+   "GEOID": 6001402500,
+   "LAT": 37.8057305,
+   "LON": -122.2847803
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4026",
+   "MEDIANINCOME": "$42,396",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 402600,
+   "GEOID": 6001402600,
+   "LAT": 37.80427,
+   "LON": -122.2799551
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4027",
+   "MEDIANINCOME": "$102,708",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 402700,
+   "GEOID": 6001402700,
+   "LAT": 37.8103325,
+   "LON": -122.2770981
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4029",
+   "MEDIANINCOME": "$19,464",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 402900,
+   "GEOID": 6001402900,
+   "LAT": 37.8071852,
+   "LON": -122.2667035
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4030",
+   "MEDIANINCOME": "$31,625",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 403000,
+   "GEOID": 6001403000,
+   "LAT": 37.8004341,
+   "LON": -122.2707274
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4031",
+   "MEDIANINCOME": "$116,875",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 403100,
+   "GEOID": 6001403100,
+   "LAT": 37.8022741,
+   "LON": -122.2755012
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4033.01",
+   "MEDIANINCOME": "$35,250",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 403301,
+   "GEOID": 6001403301,
+   "LAT": 37.7981065,
+   "LON": -122.266955
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4033.02",
+   "MEDIANINCOME": "$227,768",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 403302,
+   "GEOID": 6001403302,
+   "LAT": 37.7937603,
+   "LON": -122.2667344
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4034.01",
+   "MEDIANINCOME": "$66,719",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 403401,
+   "GEOID": 6001403401,
+   "LAT": 37.8092493,
+   "LON": -122.2597833
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4034.02",
+   "MEDIANINCOME": "$41,326",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 403402,
+   "GEOID": 6001403402,
+   "LAT": 37.8024095,
+   "LON": -122.2651075
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4035.01",
+   "MEDIANINCOME": "$99,242",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 403501,
+   "GEOID": 6001403501,
+   "LAT": 37.8177398,
+   "LON": -122.2600504
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4035.02",
+   "MEDIANINCOME": "$114,167",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 403502,
+   "GEOID": 6001403502,
+   "LAT": 37.8159444,
+   "LON": -122.2569636
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4036",
+   "MEDIANINCOME": "$85,536",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 403600,
+   "GEOID": 6001403600,
+   "LAT": 37.8135239,
+   "LON": -122.2534812
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4037.01",
+   "MEDIANINCOME": "$114,276",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 403701,
+   "GEOID": 6001403701,
+   "LAT": 37.8112134,
+   "LON": -122.2586656
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4037.02",
+   "MEDIANINCOME": "$160,250",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 403702,
+   "GEOID": 6001403702,
+   "LAT": 37.8094979,
+   "LON": -122.2520933
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4038",
+   "MEDIANINCOME": "$181,875",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 403800,
+   "GEOID": 6001403800,
+   "LAT": 37.8148236,
+   "LON": -122.2416662
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4039",
+   "MEDIANINCOME": "$165,964",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 403900,
+   "GEOID": 6001403900,
+   "LAT": 37.8171784,
+   "LON": -122.2487713
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4040",
+   "MEDIANINCOME": "$93,594",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 404000,
+   "GEOID": 6001404000,
+   "LAT": 37.8233126,
+   "LON": -122.2536627
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4041.01",
+   "MEDIANINCOME": "$168,789",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 404101,
+   "GEOID": 6001404101,
+   "LAT": 37.8300877,
+   "LON": -122.2498696
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4041.02",
+   "MEDIANINCOME": "$126,932",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 404102,
+   "GEOID": 6001404102,
+   "LAT": 37.8260219,
+   "LON": -122.2510667
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4042",
+   "MEDIANINCOME": "$235,066",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 404200,
+   "GEOID": 6001404200,
+   "LAT": 37.8361052,
+   "LON": -122.2344831
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4043",
+   "MEDIANINCOME": "$234,735",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 404300,
+   "GEOID": 6001404300,
+   "LAT": 37.844821,
+   "LON": -122.2385523
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4044",
+   "MEDIANINCOME": "$196,629",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 404400,
+   "GEOID": 6001404400,
+   "LAT": 37.8462275,
+   "LON": -122.2149841
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4045.01",
+   "MEDIANINCOME": "$238,281",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 404501,
+   "GEOID": 6001404501,
+   "LAT": 37.8271275,
+   "LON": -122.2171515
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4045.02",
+   "MEDIANINCOME": "$213,942",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 404502,
+   "GEOID": 6001404502,
+   "LAT": 37.8346277,
+   "LON": -122.2024752
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4046",
+   "MEDIANINCOME": "$200,714",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 404600,
+   "GEOID": 6001404600,
+   "LAT": 37.8199301,
+   "LON": -122.1912387
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4047",
+   "MEDIANINCOME": "$210,694",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 404700,
+   "GEOID": 6001404700,
+   "LAT": 37.8133308,
+   "LON": -122.2069747
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4048",
+   "MEDIANINCOME": "$160,347",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 404800,
+   "GEOID": 6001404800,
+   "LAT": 37.8055076,
+   "LON": -122.2131962
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4049",
+   "MEDIANINCOME": "$157,377",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 404900,
+   "GEOID": 6001404900,
+   "LAT": 37.8041422,
+   "LON": -122.2215059
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4050",
+   "MEDIANINCOME": "$167,902",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 405000,
+   "GEOID": 6001405000,
+   "LAT": 37.8120851,
+   "LON": -122.2190899
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4051",
+   "MEDIANINCOME": "$250,001",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 405100,
+   "GEOID": 6001405100,
+   "LAT": 37.811425,
+   "LON": -122.2322366
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4052",
+   "MEDIANINCOME": "$133,068",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 405200,
+   "GEOID": 6001405200,
+   "LAT": 37.8052759,
+   "LON": -122.2433884
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4053.01",
+   "MEDIANINCOME": "$85,179",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 405301,
+   "GEOID": 6001405301,
+   "LAT": 37.8020757,
+   "LON": -122.2513558
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4053.02",
+   "MEDIANINCOME": "$112,500",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 405302,
+   "GEOID": 6001405302,
+   "LAT": 37.7985075,
+   "LON": -122.2543138
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4054.01",
+   "MEDIANINCOME": "$57,313",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 405401,
+   "GEOID": 6001405401,
+   "LAT": 37.7965384,
+   "LON": -122.2494562
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4054.02",
+   "MEDIANINCOME": "$56,964",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 405402,
+   "GEOID": 6001405402,
+   "LAT": 37.7933319,
+   "LON": -122.2461006
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4055",
+   "MEDIANINCOME": "$98,250",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 405500,
+   "GEOID": 6001405500,
+   "LAT": 37.7982821,
+   "LON": -122.243279
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4056",
+   "MEDIANINCOME": "$84,732",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 405600,
+   "GEOID": 6001405600,
+   "LAT": 37.8008019,
+   "LON": -122.2372726
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4057",
+   "MEDIANINCOME": "$82,143",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 405700,
+   "GEOID": 6001405700,
+   "LAT": 37.7982307,
+   "LON": -122.2296737
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4058",
+   "MEDIANINCOME": "$63,156",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 405800,
+   "GEOID": 6001405800,
+   "LAT": 37.7939452,
+   "LON": -122.2330985
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4059.01",
+   "MEDIANINCOME": "$55,378",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 405901,
+   "GEOID": 6001405901,
+   "LAT": 37.7877859,
+   "LON": -122.2357701
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4059.02",
+   "MEDIANINCOME": "$45,489",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 405902,
+   "GEOID": 6001405902,
+   "LAT": 37.7909447,
+   "LON": -122.240953
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4060",
+   "MEDIANINCOME": "$47,917",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 406000,
+   "GEOID": 6001406000,
+   "LAT": 37.79237,
+   "LON": -122.2603108
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4061",
+   "MEDIANINCOME": "$65,273",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 406100,
+   "GEOID": 6001406100,
+   "LAT": 37.7741755,
+   "LON": -122.2275801
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4062.01",
+   "MEDIANINCOME": "$53,621",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 406201,
+   "GEOID": 6001406201,
+   "LAT": 37.7850449,
+   "LON": -122.2307359
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4062.02",
+   "MEDIANINCOME": "$45,321",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 406202,
+   "GEOID": 6001406202,
+   "LAT": 37.7819786,
+   "LON": -122.2265557
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4063",
+   "MEDIANINCOME": "$45,114",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 406300,
+   "GEOID": 6001406300,
+   "LAT": 37.789288,
+   "LON": -122.2250127
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4064",
+   "MEDIANINCOME": "$96,875",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 406400,
+   "GEOID": 6001406400,
+   "LAT": 37.796806,
+   "LON": -122.2217201
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4065",
+   "MEDIANINCOME": "$55,875",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 406500,
+   "GEOID": 6001406500,
+   "LAT": 37.7880811,
+   "LON": -122.2169865
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4066.01",
+   "MEDIANINCOME": "$72,875",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 406601,
+   "GEOID": 6001406601,
+   "LAT": 37.7936093,
+   "LON": -122.2079606
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4066.02",
+   "MEDIANINCOME": "$68,942",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 406602,
+   "GEOID": 6001406602,
+   "LAT": 37.7964782,
+   "LON": -122.2143072
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4067",
+   "MEDIANINCOME": "$136,389",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 406700,
+   "GEOID": 6001406700,
+   "LAT": 37.8033164,
+   "LON": -122.2022249
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4068",
+   "MEDIANINCOME": "$123,536",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 406800,
+   "GEOID": 6001406800,
+   "LAT": 37.7978944,
+   "LON": -122.1949575
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4069",
+   "MEDIANINCOME": "$129,261",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 406900,
+   "GEOID": 6001406900,
+   "LAT": 37.7932754,
+   "LON": -122.1903789
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4070",
+   "MEDIANINCOME": "$67,987",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 407000,
+   "GEOID": 6001407000,
+   "LAT": 37.7879458,
+   "LON": -122.2024901
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4071.01",
+   "MEDIANINCOME": "$41,963",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 407101,
+   "GEOID": 6001407101,
+   "LAT": 37.7831286,
+   "LON": -122.2143965
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4071.02",
+   "MEDIANINCOME": "$68,409",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 407102,
+   "GEOID": 6001407102,
+   "LAT": 37.7807761,
+   "LON": -122.2102384
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4072",
+   "MEDIANINCOME": "$51,927",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 407200,
+   "GEOID": 6001407200,
+   "LAT": 37.7777848,
+   "LON": -122.2192819
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4073",
+   "MEDIANINCOME": "$66,786",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 407300,
+   "GEOID": 6001407300,
+   "LAT": 37.7621786,
+   "LON": -122.2109235
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4074",
+   "MEDIANINCOME": "$75,030",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 407400,
+   "GEOID": 6001407400,
+   "LAT": 37.7710407,
+   "LON": -122.2067479
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4075",
+   "MEDIANINCOME": "$35,855",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 407500,
+   "GEOID": 6001407500,
+   "LAT": 37.769515,
+   "LON": -122.1976093
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4076",
+   "MEDIANINCOME": "$82,218",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 407600,
+   "GEOID": 6001407600,
+   "LAT": 37.7775293,
+   "LON": -122.2031992
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4077",
+   "MEDIANINCOME": "$116,250",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 407700,
+   "GEOID": 6001407700,
+   "LAT": 37.7765251,
+   "LON": -122.1932278
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4078",
+   "MEDIANINCOME": "$112,457",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 407800,
+   "GEOID": 6001407800,
+   "LAT": 37.7817468,
+   "LON": -122.1868539
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4079",
+   "MEDIANINCOME": "$145,313",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 407900,
+   "GEOID": 6001407900,
+   "LAT": 37.7884273,
+   "LON": -122.1847831
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4080",
+   "MEDIANINCOME": "$217,292",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 408000,
+   "GEOID": 6001408000,
+   "LAT": 37.8029603,
+   "LON": -122.1828718
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4081",
+   "MEDIANINCOME": "$154,609",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 408100,
+   "GEOID": 6001408100,
+   "LAT": 37.7854008,
+   "LON": -122.1572103
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4082",
+   "MEDIANINCOME": "$97,500",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 408200,
+   "GEOID": 6001408200,
+   "LAT": 37.7751005,
+   "LON": -122.1755728
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4083",
+   "MEDIANINCOME": "$135,357",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 408300,
+   "GEOID": 6001408300,
+   "LAT": 37.7711961,
+   "LON": -122.1646018
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4084",
+   "MEDIANINCOME": "$74,946",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 408400,
+   "GEOID": 6001408400,
+   "LAT": 37.7646056,
+   "LON": -122.1709595
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4085",
+   "MEDIANINCOME": "$65,162",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 408500,
+   "GEOID": 6001408500,
+   "LAT": 37.7604176,
+   "LON": -122.1785112
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4086",
+   "MEDIANINCOME": "$57,000",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 408600,
+   "GEOID": 6001408600,
+   "LAT": 37.7661916,
+   "LON": -122.1823032
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4087",
+   "MEDIANINCOME": "$48,896",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 408700,
+   "GEOID": 6001408700,
+   "LAT": 37.7688645,
+   "LON": -122.1889326
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4088",
+   "MEDIANINCOME": "$39,934",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 408800,
+   "GEOID": 6001408800,
+   "LAT": 37.758918,
+   "LON": -122.1969979
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4089",
+   "MEDIANINCOME": "$47,083",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 408900,
+   "GEOID": 6001408900,
+   "LAT": 37.7541581,
+   "LON": -122.1889463
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4090",
+   "MEDIANINCOME": "$64,242",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 409000,
+   "GEOID": 6001409000,
+   "LAT": 37.7299594,
+   "LON": -122.2164979
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4091",
+   "MEDIANINCOME": "$62,261",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 409100,
+   "GEOID": 6001409100,
+   "LAT": 37.7323419,
+   "LON": -122.1834828
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4092",
+   "MEDIANINCOME": "$59,014",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 409200,
+   "GEOID": 6001409200,
+   "LAT": 37.7291306,
+   "LON": -122.1778427
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4093",
+   "MEDIANINCOME": "$52,361",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 409300,
+   "GEOID": 6001409300,
+   "LAT": 37.7378474,
+   "LON": -122.1733603
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4094",
+   "MEDIANINCOME": "$41,826",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 409400,
+   "GEOID": 6001409400,
+   "LAT": 37.744613,
+   "LON": -122.1803623
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4095",
+   "MEDIANINCOME": "$46,157",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 409500,
+   "GEOID": 6001409500,
+   "LAT": 37.7504463,
+   "LON": -122.1837659
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4096",
+   "MEDIANINCOME": "$54,236",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 409600,
+   "GEOID": 6001409600,
+   "LAT": 37.7532669,
+   "LON": -122.1726197
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4097",
+   "MEDIANINCOME": "$50,674",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 409700,
+   "GEOID": 6001409700,
+   "LAT": 37.7564193,
+   "LON": -122.1658941
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4098",
+   "MEDIANINCOME": "$102,031",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 409800,
+   "GEOID": 6001409800,
+   "LAT": 37.7603603,
+   "LON": -122.1557642
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4099",
+   "MEDIANINCOME": "$160,701",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 409900,
+   "GEOID": 6001409900,
+   "LAT": 37.7620318,
+   "LON": -122.1358942
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4101",
+   "MEDIANINCOME": "$71,696",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 410100,
+   "GEOID": 6001410100,
+   "LAT": 37.7477424,
+   "LON": -122.1533513
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4102",
+   "MEDIANINCOME": "$66,989",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 410200,
+   "GEOID": 6001410200,
+   "LAT": 37.7453063,
+   "LON": -122.1571742
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4103",
+   "MEDIANINCOME": "$51,667",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 410300,
+   "GEOID": 6001410300,
+   "LAT": 37.7466798,
+   "LON": -122.1661407
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4104",
+   "MEDIANINCOME": "$93,000",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 410400,
+   "GEOID": 6001410400,
+   "LAT": 37.7408161,
+   "LON": -122.1621741
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4105",
+   "MEDIANINCOME": "$32,875",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 410500,
+   "GEOID": 6001410500,
+   "LAT": 37.8100765,
+   "LON": -122.288933
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4238",
+   "MEDIANINCOME": "$232,813",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 423800,
+   "GEOID": 6001423800,
+   "LAT": 37.8547209,
+   "LON": -122.2441397
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4239.01",
+   "MEDIANINCOME": "$138,992",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 423901,
+   "GEOID": 6001423901,
+   "LAT": 37.852246,
+   "LON": -122.267564
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4239.02",
+   "MEDIANINCOME": "$200,119",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 423902,
+   "GEOID": 6001423902,
+   "LAT": 37.8548712,
+   "LON": -122.257602
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4240.01",
+   "MEDIANINCOME": "$107,944",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 424001,
+   "GEOID": 6001424001,
+   "LAT": 37.8503694,
+   "LON": -122.2746228
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4240.02",
+   "MEDIANINCOME": "$101,667",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 424002,
+   "GEOID": 6001424002,
+   "LAT": 37.8504772,
+   "LON": -122.281531
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4251.01",
+   "MEDIANINCOME": "$134,625",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 425101,
+   "GEOID": 6001425101,
+   "LAT": 37.8382532,
+   "LON": -122.3054128
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4251.02",
+   "MEDIANINCOME": "$138,462",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 425102,
+   "GEOID": 6001425102,
+   "LAT": 37.8398785,
+   "LON": -122.2946351
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4251.03",
+   "MEDIANINCOME": "$200,625",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 425103,
+   "GEOID": 6001425103,
+   "LAT": 37.8425608,
+   "LON": -122.2898163
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4251.04",
+   "MEDIANINCOME": "$110,833",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 425104,
+   "GEOID": 6001425104,
+   "LAT": 37.8326584,
+   "LON": -122.2833245
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4261",
+   "MEDIANINCOME": "$250,001",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 426100,
+   "GEOID": 6001426100,
+   "LAT": 37.8216083,
+   "LON": -122.2252725
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4262",
+   "MEDIANINCOME": "$250,001",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 426200,
+   "GEOID": 6001426200,
+   "LAT": 37.8246262,
+   "LON": -122.2406411
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4271",
+   "MEDIANINCOME": "$168,611",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 427100,
+   "GEOID": 6001427100,
+   "LAT": 37.764909,
+   "LON": -122.2299614
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4272",
+   "MEDIANINCOME": "$103,750",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 427200,
+   "GEOID": 6001427200,
+   "LAT": 37.780827,
+   "LON": -122.248255
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4273",
+   "MEDIANINCOME": "$113,182",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 427300,
+   "GEOID": 6001427300,
+   "LAT": 37.7810489,
+   "LON": -122.2662775
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4276",
+   "MEDIANINCOME": "$80,258",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 427600,
+   "GEOID": 6001427600,
+   "LAT": 37.7778323,
+   "LON": -122.2835979
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4277",
+   "MEDIANINCOME": "$119,688",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 427700,
+   "GEOID": 6001427700,
+   "LAT": 37.7681553,
+   "LON": -122.2868948
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4278",
+   "MEDIANINCOME": "$133,438",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 427800,
+   "GEOID": 6001427800,
+   "LAT": 37.7714922,
+   "LON": -122.2690581
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4279",
+   "MEDIANINCOME": "$125,223",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 427900,
+   "GEOID": 6001427900,
+   "LAT": 37.7698045,
+   "LON": -122.2582454
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4280",
+   "MEDIANINCOME": "$109,196",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 428000,
+   "GEOID": 6001428000,
+   "LAT": 37.7666414,
+   "LON": -122.2475404
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4281",
+   "MEDIANINCOME": "$136,591",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 428100,
+   "GEOID": 6001428100,
+   "LAT": 37.7589136,
+   "LON": -122.2346068
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4282",
+   "MEDIANINCOME": "$121,071",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 428200,
+   "GEOID": 6001428200,
+   "LAT": 37.7533497,
+   "LON": -122.2396803
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4283.01",
+   "MEDIANINCOME": "$167,716",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 428301,
+   "GEOID": 6001428301,
+   "LAT": 37.7344929,
+   "LON": -122.2414385
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4283.02",
+   "MEDIANINCOME": "$207,155",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 428302,
+   "GEOID": 6001428302,
+   "LAT": 37.7439709,
+   "LON": -122.249779
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4284",
+   "MEDIANINCOME": "$90,927",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 428400,
+   "GEOID": 6001428400,
+   "LAT": 37.7564138,
+   "LON": -122.2559068
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4285",
+   "MEDIANINCOME": "$112,684",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 428500,
+   "GEOID": 6001428500,
+   "LAT": 37.7601324,
+   "LON": -122.2593887
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4286",
+   "MEDIANINCOME": "$134,375",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 428600,
+   "GEOID": 6001428600,
+   "LAT": 37.766273,
+   "LON": -122.2738461
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4287",
+   "MEDIANINCOME": "$138,676",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 428700,
+   "GEOID": 6001428700,
+   "LAT": 37.7801283,
+   "LON": -122.3050028
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4301.02",
+   "MEDIANINCOME": "$180,385",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 430102,
+   "GEOID": 6001430102,
+   "LAT": 37.7674981,
+   "LON": -122.050012
+ },
+ {
+   "CENSUSTRACT": "Census Tract 4324",
+   "MEDIANINCOME": "$80,192",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 432400,
+   "GEOID": 6001432400,
+   "LAT": 37.7085402,
+   "LON": -122.1858996
+ },
+ {
+   "CENSUSTRACT": "Census Tract 9832",
+   "MEDIANINCOME": "$211,250",
+   "STATEFP": 6,
+   "COUNTYFP": 1,
+   "TRACTCE": 983200,
+   "GEOID": 6001983200,
+   "LAT": 37.7959455,
+   "LON": -122.277268
+ }
+]

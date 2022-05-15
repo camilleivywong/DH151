@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+
+        <!--A title-->
+        <title>Cancer Rates Iowa</title>
+
+        <!-- referencing the leaflet files and county document  -->
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset=utf-8 />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui' />
+        <script src='http://cdn.leafletjs.com/leaflet/v1.3.1/leaflet.js'></script>
+        <script src="leaflet-side-by-side.js"></script>
+        <link href='http://cdn.leafletjs.com/leaflet/v1.3.1/leaflet.css' rel='stylesheet' />
+        <script src="Cancer_IA.geojson"></script>
+        <style>
+             body {
+                padding: 0;
+                margin: 0;
+                }
+
+            #map{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            .info {
+                padding: 6px 8px;
+                font: 14px/16px Arial, Helvetica, sans-serif;
+                background: white;
+                background: rgba(255,255,255,0.8);
+                box-shadow: 0 0 15px rgba(0,0,0,0.2);
+                border-radius: 5px;
+            }
+
+            .legend {
+                text-align: left;
+                line-height: 40px;
+                color: #555;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 20px;
+            }
+            .legend i {
+                width: 40px;
+                height: 40px;
+                float: left;
+                margin-right: 8px;
+                opacity: 0.7;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="map"></div>
+
+        <script>
+
+            var map = L.map('map').setView([42.0667, -93.4], 8);
+            map.createPane('left');
+            map.createPane('right');
+
+            var baseMap = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+                subdomains: 'abcd',
+                maxZoom: 19,
+                layers: baseMap
+            });
+
+            var baseMapIndex = {
+                "BaseMap": baseMap
+            };
+
+            layerControl = L.control.layers(baseMapIndex).addTo(map);
+
+
+
+
+
+            // left pane 
+			function getColor(d) {
+                return d > 545.0 ? '#4D0026' :
+                        d > 497.0  ? '#48006a' :
+                        d > 462.0  ? '#dd3497' :
+                        d > 406.0  ? '#fcc5c0' :
+                        d > 316.0  ? '#fef3f2' :
+                                    '#fff7f3';
+            }
+            function style(feature) {
+                return {
+                    weight: 2,
+                    opacity: 1,
+                    color: 'white',
+                    dashArray: '3',
+                    fillOpacity: 0.7,
+                    fillColor: getColor(feature.properties.IA_2000_Ra)
+                };
+            }
+            function highlightFeature(e) {
+                var layer = e.target;
+
+                layer.setStyle({
+                    weight: 5,
+                    color: '#666',
+                    dashArray: '',
+                    fillOpacity: 0.7
+                })
+
+                if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+                    layer.bringToFront();
+                }
+
+                info.update(layer.feature.properties);
+            }
+            function resetHighlight(e) {
+                overlay1.resetStyle(e.target);
+                info.update();
+            }
+
+            function onEachFeature(feature, layer) {
+                layer.on({
+                    mouseover: highlightFeature,
+                    mouseout: resetHighlight,
+
+                })
+                layer.bindPopup('<b>County:' + feature.properties.COUNTY + '<br/><br/>'+
+                    'Cancer Rate for 2000: </b><br>'
+                    + feature.properties.IA_2000_Ra + '<br/><br/>'+
+                    'Cancer Rate for 2016: </b><br>'
+                    + feature.properties.IA_2000_Ra);
+            }
+
+            var overlay1 = L.geoJson(cancer, {
+                style: style,
+                pane: 'left',
+                onEachFeature: onEachFeature
+            }).addTo(map);
+
+            var legend = L.control({position: 'bottomleft'});
+            legend.onAdd = function (map) {
+
+                var div = L.DomUtil.create('div', 'info legend'),
+                    grades = [316.0, 406.0, 462.0, 497.0, 545.0],
+                    labels = ['<strong> Cancer Rate, 2000 </strong>'],
+                    from, to;
+
+                    for (var i = 0; i < grades.length; i++) {
+                        from = grades[i];
+                        to = grades[i + 1];
+
+                        labels.push(
+                            '<i style="background:' + getColor(from + 1) + '"></i> ' +
+                            from + (to ? '&ndash;' + to : '+'));
+                    }
+
+                div.innerHTML = labels.join('<br>');
+                return div;
+            };
+
+            legend.addTo(map);
+
+
+
+
+
+			
+			//right pane 
+            function getColor1(d) {
+                return d > 574 ? '#4D0026' :
+                        d > 504.0  ? '#48006a' :
+                        d > 446.0  ? '#dd3497' :
+                        d > 353.0  ? '#fcc5c0' :
+                        d > 308.0  ? '#fef3f2' :
+                                    '#fff7f3';
+            }
+
+            function style1(feature1) {
+                return {
+                    weight: 2,
+                    opacity: 1,
+                    color: 'white',
+                    dashArray: '3',
+                    fillOpacity: 0.7,
+                    fillColor: getColor1(feature1.properties.IA_2016_Ra)
+                };
+            }
+            function highlightFeature1(e) {
+                var layer = e.target;
+
+                layer.setStyle({
+                    weight: 5,
+                    color: '#666',
+                    dashArray: '',
+                    fillOpacity: 0.7
+                })
+
+                if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+                    layer.bringToFront();
+                }
+
+                info.update(layer.feature.properties);
+            }
+            function resetHighlight1(e) {
+                overlay2.resetStyle(e.target);
+                info.update();
+            }
+
+            function onEachFeature1(feature, layer) {
+                layer.on({
+                    mouseover: highlightFeature1,
+                    mouseout: resetHighlight1,
+
+                })
+                layer.bindPopup('<b>County:' + feature.properties.COUNTY + '<br/><br/>'+
+                    'Cancer Rate for 2016: </b><br>'
+                    + feature.properties.IA_2016_Ra + '<br/><br/>'+
+                    'Cancer Rate for 2000: </b><br>'
+                    + feature.properties.IA_2000_Ra);
+            }
+
+            var overlay2 = L.geoJson(cancer, {
+                style: style1,
+                pane: 'right',
+                onEachFeature: onEachFeature1
+            }).addTo(map);
+
+
+            var legend1 = L.control({position: 'bottomright'});
+
+            legend1.onAdd = function (map) {
+                var div1 = L.DomUtil.create('div', 'info legend'),
+                    grades1 = [308.0, 353.0, 446.0, 504.0, 574.0],
+                    labels1 = ['<strong> Cancer Rate, 2016 </strong>'],
+                    from1, to1;
+
+                    for (var i = 0; i < grades1.length; i++) {
+                        from = grades1[i];
+                        to = grades1[i + 1];
+
+                        labels1.push(
+                            '<i style="background:' + getColor1(from + 1) + '"></i> ' +
+                            from + (to ? '&ndash;' + to : '+'));
+                    }
+
+                div1.innerHTML = labels1.join('<br>');
+                return div1;
+            };
+            legend1.addTo(map);
+
+            L.control.sideBySide(overlay1, overlay2).addTo(map);    
+        </script>

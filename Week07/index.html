@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>World Choropleth</title>
+	<meta charset="utf-8" />
+
+	<!-- style sheets -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- classy brew -->
+	<script src="js/classybrew.js"></script>
+
+	<!-- leaflet side by side-->
+	<script src="data/leaflet-side-by-side.js"></script>
+</head>
+<body>
+
+	<div class="header">
+		<b>Public Dollars and Private Stadiums</b>
+	</div>
+	<div class="sidebar">
+		<div class="map-item" onclick="mapGeoJSON('Alamedacounty-medianfamilyincome-1970_MedianFamilyIncome_1970',6,'Oranges','equal_interval');">Median Family Income in 1970</div>
+		<div class="map-item" onclick="mapGeoJSON('Alamedacounty-medianfamilyincome-2020_MedianFamilyIncome_2020',6,'Oranges','equal_interval');">Median Family Income in 2020</div>
+	</div>
+	<div class="navigation">
+		<a href="about.html">About Us</a>
+		<div class="navigation-item" onclick="navFlyToIndex(47.59159070622367, -122.33214372101791)">T-Mobile Park</div>
+		<div class="navigation-item" onclick="navFlyToIndex(37.75175575650911, -122.20055653051473)">RingCentral Coliseum</div>
+		<div class="navigation-item" onclick="navFlyToIndex(37.33321617153015, -121.9019898728522)">SAP Center</div>
+		<div class="navigation-item" onclick="navFlyToIndex(34.07405537830926, -118.23988319990595)">Dodger Stadium</div>
+	</div>
+	<div class="content">
+		<div id="map"></div>
+	</div>
+	<div class="footer">
+		Source: <a href="https://data.census.gov/cedsci/">U.S. Census Bureau</a>
+	</div>
+	
+	<!-- <script src="js/map.js"></script> -->
+	<script src="js/map.js"></script>
+
+</body>
+</html>
