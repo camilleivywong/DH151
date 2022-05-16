@@ -50,7 +50,7 @@ function getGeoJSON(){
 		geojson_data = data;
 
 		// call the map function
-		mapGeoJSON('Alamedacounty-medianfamilyincome-1970_MedianFamilyIncome_1970') // add a field to be used
+		mapGeoJSON('Alamedacounty-medianfamilyincome-1970_MedianFamilyIncome_1970', 6, "Oranges", 'equal_interval') // add a field to be used
 	})
 }
 
