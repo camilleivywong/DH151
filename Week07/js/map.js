@@ -232,6 +232,10 @@ function createTooltip(){
 	tool_tip.addTo(map);
 }
 
+function navFlyToIndex(lat,lon){
+	map.flyTo([lat,lon],12)
+};
+
 //to do: rename properties without spaces and numbers
 //how to add multiple layers on a map
 //classybrew with data that contains symsbols "$" + ","
