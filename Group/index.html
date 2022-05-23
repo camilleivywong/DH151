@@ -6,6 +6,9 @@
 
 	<!-- style sheets -->
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
 
 	<!-- leaflet -->
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
@@ -18,7 +21,7 @@
 	<script src="js/classybrew.js"></script>
 
 	<!-- leaflet side by side-->
-	<script src="data/leaflet-side-by-side.js"></script>
+	<!-- <script src="data/leaflet-side-by-side.js"></script> -->
 </head>
 <body>
 
@@ -30,22 +33,22 @@
 		<p>The purpose of this project is to analyze the neighborhood in which a stadium is built and the economic implications of public subsidies on professional sport facilities. Our method involves comparing Census data (U.S. Census Bureau) and The Home Owners’ Loan Corporation Redlining Grade Map. This detailed analysis will illustrate the long-term effects of housing segregation in the United States and critically examine the redirection of taxpayer-backed bonds on sports stadiums.</p>
 		<p>This map analyzes Median Family Income collected from the US Census Bureau, comparing the data from 1970 and 2020.</p>
 		<p>By Alex Bezirjyan (Los Angeles County, CA), Cameron Jewett (King County, WA), Yvonne Nguyen (Santa Clara County, CA), and Camille Wong (Alameda County, CA)</p>
-		<div class="map-item" onclick="mapGeoJSON('Alamedacounty-medianfamilyincome-1970_MedianFamilyIncome_1970',3,'Oranges','equal_interval');">Median Family Income in 1970</div>
-		<div class="map-item" onclick="mapGeoJSON('Alamedacounty-medianfamilyincome-2020_MedianFamilyIncome_2020',3,'Oranges','equal_interval');">Median Family Income in 2020</div>
+		<!-- <div class="map-item" onclick="mapGeoJSON('Alamedacounty-medianfamilyincome-1970_MedianFamilyIncome_1970',3,'Oranges','equal_interval');">Median Family Income in 1970</div>
+		<div class="map-item" onclick="mapGeoJSON('Alamedacounty-medianfamilyincome-2020_MedianFamilyIncome_2020',3,'Oranges','equal_interval');">Median Family Income in 2020</div> -->
 	</div>
 	<div class="navigation">
 		<!-- <a href="about.html">About Us</a> -->
-		<div class="navigation-item" onclick="navFlyToIndex(47.59159070622367, -122.33214372101791)">T-Mobile Park</div>
-		<div class="navigation-item" onclick="navFlyToIndex(37.75175575650911, -122.20055653051473)">RingCentral Coliseum</div>
-		<div class="navigation-item" onclick="navFlyToIndex(37.33321617153015, -121.9019898728522)">SAP Center</div>
-		<div class="navigation-item" onclick="navFlyToIndex(34.07405537830926, -118.23988319990595)">Dodger Stadium</div>
+		<div class="navigation-item" onclick="navFlyToIndex(47.59159070622367, -122.33214372101791); getGeoJSON(geoJsonData[1])">T-Mobile Park</div>
+		<div class="navigation-item" onclick="navFlyToIndex(37.75175575650911, -122.20055653051473); getGeoJSON(geoJsonData[0])">RingCentral Coliseum</div>
+		<div class="navigation-item" onclick="navFlyToIndex(37.33321617153015, -121.9019898728522); getGeoJSON(geoJsonData[2])">SAP Center</div>
+		<div class="navigation-item" onclick="navFlyToIndex(34.07405537830926, -118.23988319990595); getGeoJSON(geoJsonData[3])">Dodger Stadium</div>
 	</div>
 	<div class="content">
 		<div id="map"></div>
 	</div>
-	<div class="footer">
+	<!-- <div class="footer">
 		Source: <a href="https://data.census.gov/cedsci/">U.S. Census Bureau</a>
-	</div>
+	</div> -->
 	
 	<!-- <script src="js/map.js"></script> -->
 	<script src="js/map.js"></script>

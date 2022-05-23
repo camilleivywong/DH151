@@ -5,8 +5,8 @@ body,html {
 }
 
 p {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
+	font-family: 'DM Mono Light', monospace;
+	font-size: 16px;
 }
 
 #map {
@@ -15,24 +15,25 @@ p {
 
 body {
 	display: grid;
-	grid-template-rows: 60px 60px 1fr 40px;
-	grid-template-columns: 350px 1fr;
+	grid-template-rows: 100px 60px 1fr; 
+	/* 30px; */
+	grid-template-columns: 400px 1fr;
 	grid-template-areas: 
 	"header header"
 	"navigation navigation"
-	"sidebar content"
-	"footer footer";
+	"sidebar content";
+	/* "footer footer"; */
 }
 
 
 .header {
 	grid-area: header;
 	text-align: center;
-	padding:10px;
-	background-color: #333;
-	color: white;
-	font-size: 2em;
-	font-family: Arial, Helvetica, sans-serif;
+	padding:25px;
+	background-color: #fff2de;
+	color: #e5443c;
+	font-size: 5.5em;
+	font-family: 'Le Murmure';	
 }
 
 .navigation {
@@ -40,10 +41,10 @@ body {
 	text-align: center;
 	display: inline-block;
 	padding:10px;
-	background-color: #333;
-	color: white;
-	font-size: 1em;
-	font-family: Arial, Helvetica, sans-serif;
+	background-color: #fff2de;
+	color: #44403b;
+	font-size: 19px;
+	font-family: 'DM Mono Light', monospace;
 }
 
 .navigation-item{
@@ -51,20 +52,23 @@ body {
 	padding: 2px;
 	margin: 10px;
 	text-align: center;
+	cursor: grab;
 }
 
 .navigation-item a:hover{
 	color: #818181;
 	background-color: #818181;
+	cursor: grab;
 }
 
 
 .sidebar {
-	color: white;
+	color: #44403b;
 	grid-area: sidebar;
 	padding:10px;
-	background-color: #555;
+	background-color: #fff2de;
 	overflow: auto;
+	padding-top: 0px;
 }
 
 .content {
@@ -74,7 +78,9 @@ body {
 .footer {
 	grid-area: footer;
 	padding:10px;
-	background-color: rgb(175, 175, 175);
+	background-color: #fff2de;
+	font-family: 'DM Mono Light', monospace;
+	font-size: 14px;
 }
 
 /* legend styles */
@@ -111,4 +117,11 @@ body {
     background-color: #111;
 	font-family: Arial, Helvetica, sans-serif;
 	cursor: pointer;
+}
+
+@font-face {
+	font-family: Le Murmure;
+	src: url(css/fonts/le-murmure.woff);
+	font-family: DM Mono Light;
+	src: url(css/fonts/DM_Mono_Light.ttf);
 }

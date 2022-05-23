@@ -1,14 +1,14 @@
 // Global variables
 let map;
-let lat = 0;
-let lon = 0;
-let zl = 3;
+let lat = 37.75181513732688;
+let lon = -122.20057798867332;
+let zl = 4;
 let path = '';
 
 // put this in your global variables
 // let geojsonPath = 'data/alameda-census-joined-complete.geojson';
 let geojson_data;
-let geojson_data_right;
+// let geojson_data_right;
 let geojson_layer;
 let geojson_layers = [];
 
@@ -18,21 +18,27 @@ let legend = L.control({ position: 'bottomright' });
 
 let info_panel = L.control();
 
-// let geojsonPathSeattle = 'data/Seattle.geojson';
-// let geojson_data_seattle;
-// let geojson_layer_seattle;
 
 let geoJsonData = [
 	{
 		path: 'data/alameda-census-joined-complete.geojson',
-		mfi: 'Alamedacounty-medianfamilyincome-1970_MedianFamilyIncome_1970',
-		color: '#ed1288',
-		code: 06
+		mfi: 'Alamedacounty-medianfamilyincome-2020_MedianFamilyIncome_2020',
+		code: 385
 	},
 	{
 		path: 'data/Seattle.geojson',
 		mfi: 'SEATTLE_MHI2020',
 		code: 53
+	},
+	{
+		path: 'data/SJ_Joined.geojson',
+		mfi: 'sccmhv2020_MedianValue',
+		code: 685
+	},
+	{
+		path: 'data/LAcounty_all.geojson',
+		mfi: 'LAcounty_census-joined-mhi_1990_LAcounty_mhi_1990_MEDIANHOUSEHOLDINCOME_1990',
+		code: 415
 	}
 ];
 
@@ -43,10 +49,12 @@ $(document).ready(function () {
 	createMap(lat, lon, zl);
 	geojson_layer = L.geoJSON().addTo(map);
 
-	for (let i = 0; i < geoJsonData.length; i++) {
-		console.log(geoJsonData[i])
-		getGeoJSON(geoJsonData[i]);
-	}
+	getGeoJSON(geoJsonData[0]);
+
+	// for (let i = 0; i < geoJsonData.length; i++) {
+	// 	console.log(geoJsonData[i])
+	// 	getGeoJSON(geoJsonData[i]);
+	// }
 });
 
 // create the map
@@ -81,9 +89,9 @@ function getGeoJSON(allGeoJsonData) {
 function mapGeoJSON(allData, field, num_classes, color, scheme) {
 
 	// clear layers in case it has been mapped already
-	// if (geojson_layer) {
-	// 	geojson_layer.clearLayers()
-	// }
+	if (geojson_layer) {
+		geojson_layer.clearLayers()
+	}
 
 	// globalize the field to map
 	// fieldtomap = field;
@@ -152,7 +160,7 @@ function mapGeoJSON(allData, field, num_classes, color, scheme) {
 
 }
 
-function getStyle(feature, string) {
+function getStyle(feature) {
 	return {
 		stroke: true,
 		color: 'white',
@@ -243,12 +251,23 @@ function createInfoPanel(allData, fieldName) {
 	info_panel.update = function (properties) {
 		// if feature is highlighted
 		if (properties && allData.code == '53') {
+			this._div.innerHTML = `	<b>${properties.NAMELSAD}</b>
+									<br>KING COUNTY</br>
+									<br>${"MEDIAN FAMILY INCOME 2020"}: ${properties[allData.mfi]}`;
+		} else if (properties && allData.code == '385') {
 			this._div.innerHTML = `	<b>${properties.NAMELSAD10}</b>
-									<br>${"SEATTLE"}: ${properties[allData.mfi]}`;
-		} else if (properties && allData.code == '06') {
+									<br>ALAMEDA COUNTY</br>
+									<br>${"MEDIAN FAMILY INCOME 2020"}: ${properties[allData.mfi]}`;
+		} else if (properties && allData.code == '685') {
+			this._div.innerHTML = `	<b>${properties.NAMELSAD}</b>
+									<br>SANTA CLARA COUNTY</br>
+									<br>${"MEDIAN FAMILY INCOME 2020"}: ${properties[allData.mfi]}`;
+		} else if (properties && allData.code == '415') {
 			this._div.innerHTML = `	<b>${properties.NAMELSAD10}</b>
-									<br>${"ALAMEDA"}: ${properties[allData.mfi]}`;
-		}
+									<br>LOS ANGELES COUNTY</br>
+									<br>${"MEDIAN FAMILY INCOME 2020"}: ${properties[allData.mfi]}`;
+		} 
+
 		// if feature is not highlighted
 		else {
 			this._div.innerHTML = 'Hover over a neighborhood';
@@ -284,6 +303,6 @@ function createInfoPanel(allData, fieldName) {
 // 	tool_tip.addTo(map);
 // }
 
-function navFlyToIndex(lat, lon) {
-	map.flyTo([lat, lon], 12)
+function navFlyToIndex(lat, lon, index) {
+	map.panTo([lat, lon], 8, index)
 };
