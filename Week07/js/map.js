@@ -8,7 +8,6 @@ let path = '';
 // put this in your global variables
 let geojsonPath = 'data/alameda-census-joined-complete.geojson';
 let geojson_data;
-let geojson_data_right;
 let geojson_layer;
 
 let brew = new classyBrew();
@@ -83,7 +82,6 @@ function mapGeoJSON(field,num_classes,color,scheme){
 	geojson_layer = L.geoJson(geojson_data, {
 		style: getStyle, //call a function to style each feature
         onEachFeature: onEachFeature, // actions on each feature
-		pane: 'left' //put data on left pane
 	}).addTo(map);
 
 	
@@ -94,8 +92,6 @@ function mapGeoJSON(field,num_classes,color,scheme){
 
     // // create the infopanel
 	createInfoPanel();
-
-	createTooltip();
 
 }
 
@@ -142,11 +138,6 @@ function onEachFeature(feature, layer) {
 		mouseout: resetHighlight,
 		click: zoomToFeature
 	});
-
-	// layer.bindTooltip(
-	// 	`<b>${properties.STATEFP10}</b>
-	// 	<br>${fieldtomap}: ${properties[fieldtomap]}`
-	// ).addTo(map);
 }
 
 // on mouse over, highlight the feature
@@ -193,6 +184,7 @@ function createInfoPanel(){
 		// if feature is highlighted
 		if(properties){
 			this._div.innerHTML = `	<b>${properties.NAMELSAD10}</b>
+									<br>ALAMEDA COUNTY</br>
 									<br>${fieldtomap}: ${properties[fieldtomap]}`;
 		}
 		// if feature is not highlighted
@@ -205,39 +197,3 @@ function createInfoPanel(){
 	info_panel.addTo(map);
 
 }
-
-// L.control.sideBySide(geojson_data, geojson_data_right).addTo(map);
-
-function createTooltip(){
-	tool_tip.onAdd = function (map) {
-		this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
-		this.update();
-		return this._div;
-	};
-
-	// method that we will use to update the control based on feature properties passed
-	tool_tip.update = function (properties) {
-		// if feature is highlighted
-		if(properties){
-			this._div.innerHTML = `	<b>${properties.STATEFP10}</b>
-									<br>${fieldtomap}: ${properties[fieldtomap]}`;
-		}
-		// if feature is not highlighted
-		else
-		{
-			this._div.innerHTML = 'Hover over a neighborhood';
-		}
-	};
-
-	tool_tip.addTo(map);
-}
-
-function navFlyToIndex(lat,lon){
-	map.flyTo([lat,lon],12)
-};
-
-//to do: rename properties without spaces and numbers
-//how to add multiple layers on a map
-//classybrew with data that contains symsbols "$" + ","
-//binding popup
-//leaflet side by side

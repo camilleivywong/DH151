@@ -29,16 +29,27 @@
 		<b>Public Dollars and Private Stadiums</b>
 	</div>
 	<div class="sidebar">
-		<p><i>Stadium Spectacle</i> opens an investigation across publicly-funded stadiums in the U.S. under the four major professional sport leagues––the NBA, NFL, MLB, and NHL. With case studies on four major US stadiums: the T-Mobile Arena (Seattle, WA), Dodger Stadium (Los Angeles, CA), the San Jose SAP Center (San Jose, CA), and the RingCentral Coliseum (Oakland, CA), this project will follow the historical neighborhoods these stadiums were built in to chart their impact on the surrounding environment. It will ask not only how stadiums affect the demographics of the neighborhood––including race, property value, and median income, but also interrogate the sites of their construction. </p>
+		<div class="tableauPlaceholder" id="viz1653325380963" style="position: block; width: 100%; height: 519.75px; overflow: hidden; display: grid;">
+			<iframe frameborder="0" marginheight="0" marginwidth="0" title="Data Visualization" allowtransparency="true" allowfullscreen="true" class="tableauViz" style="display: block; width: 100%; height: 519.75px; margin: 0px; padding: 0px; border: none;" src="https://public.tableau.com/views/RingCentralColiseumConstructionFunding/Sheet1?:embed=y&amp;:showVizHome=no&amp;:host_url=https%3A%2F%2Fpublic.tableau.com%2F&amp;:embed_code_version=3&amp;:tabs=no&amp;:toolbar=yes&amp;:animate_transition=yes&amp;:display_static_image=no&amp;:display_spinner=no&amp;:display_overlay=yes&amp;:display_count=yes&amp;:language=en-US&amp;:loadOrderID=10&amp;:increment_view_count=no"></iframe>
+		</div>
+		
+		<div class="tableauPlaceholder" id="viz1653325978443" style="position: block; width: 100%; height: 519.75px; overflow: hidden; display: block;">
+			<iframe frameborder="0" marginheight="0" marginwidth="0" title="Data Visualization" allowtransparency="true" allowfullscreen="true" class="tableauViz" style="display: block; width: 100%; height: 519.75px; margin: 0px; padding: 0px; border: none;" src="https://public.tableau.com/views/RingCentralColiseumRevenueExpenditureCosts2020/Sheet1?:embed=y&amp;:showVizHome=no&amp;:host_url=https%3A%2F%2Fpublic.tableau.com%2F&amp;:embed_code_version=3&amp;:tabs=no&amp;:toolbar=yes&amp;:animate_transition=yes&amp;:display_static_image=no&amp;:display_spinner=no&amp;:display_overlay=yes&amp;:display_count=yes&amp;:language=en-US&amp;:loadOrderID=10&amp;:increment_view_count=no"></iframe>
+		</div>
+
+		<!-- <p><i>Stadium Spectacle</i> opens an investigation across publicly-funded stadiums in the U.S. under the four major professional sport leagues––the NBA, NFL, MLB, and NHL. With case studies on four major US stadiums: the T-Mobile Arena (Seattle, WA), Dodger Stadium (Los Angeles, CA), the San Jose SAP Center (San Jose, CA), and the RingCentral Coliseum (Oakland, CA), this project will follow the historical neighborhoods these stadiums were built in to chart their impact on the surrounding environment. It will ask not only how stadiums affect the demographics of the neighborhood––including race, property value, and median income, but also interrogate the sites of their construction. </p>
 		<p>The purpose of this project is to analyze the neighborhood in which a stadium is built and the economic implications of public subsidies on professional sport facilities. Our method involves comparing Census data (U.S. Census Bureau) and The Home Owners’ Loan Corporation Redlining Grade Map. This detailed analysis will illustrate the long-term effects of housing segregation in the United States and critically examine the redirection of taxpayer-backed bonds on sports stadiums.</p>
 		<p>This map analyzes Median Family Income collected from the US Census Bureau, comparing the data from 1970 and 2020.</p>
 		<p>By Alex Bezirjyan (Los Angeles County, CA), Cameron Jewett (King County, WA), Yvonne Nguyen (Santa Clara County, CA), and Camille Wong (Alameda County, CA)</p>
-		<!-- <div class="map-item" onclick="mapGeoJSON('Alamedacounty-medianfamilyincome-1970_MedianFamilyIncome_1970',3,'Oranges','equal_interval');">Median Family Income in 1970</div>
+		<div class="map-item" onclick="mapGeoJSON('Alamedacounty-medianfamilyincome-1970_MedianFamilyIncome_1970',3,'Oranges','equal_interval');">Median Family Income in 1970</div>
 		<div class="map-item" onclick="mapGeoJSON('Alamedacounty-medianfamilyincome-2020_MedianFamilyIncome_2020',3,'Oranges','equal_interval');">Median Family Income in 2020</div> -->
 	</div>
 	<div class="navigation">
 		<!-- <a href="about.html">About Us</a> -->
-		<div class="navigation-item" onclick="navFlyToIndex(47.59159070622367, -122.33214372101791); getGeoJSON(geoJsonData[1])">T-Mobile Park</div>
+		<div class="navigation-item" 
+			onclick="navFlyToIndex(47.59159070622367, -122.33214372101791);
+			getGeoJSON(geoJsonData[1])">T-Mobile Park
+		</div>
 		<div class="navigation-item" onclick="navFlyToIndex(37.75175575650911, -122.20055653051473); getGeoJSON(geoJsonData[0])">RingCentral Coliseum</div>
 		<div class="navigation-item" onclick="navFlyToIndex(37.33321617153015, -121.9019898728522); getGeoJSON(geoJsonData[2])">SAP Center</div>
 		<div class="navigation-item" onclick="navFlyToIndex(34.07405537830926, -118.23988319990595); getGeoJSON(geoJsonData[3])">Dodger Stadium</div>
@@ -50,8 +61,10 @@
 		Source: <a href="https://data.census.gov/cedsci/">U.S. Census Bureau</a>
 	</div> -->
 	
-	<!-- <script src="js/map.js"></script> -->
-	<script src="js/map.js"></script>
+	<!-- <script src="js/map.js"></script>	 -->
+			
+
+	<script src="js/map_v2.js"></script> 
 
 </body>
 </html>

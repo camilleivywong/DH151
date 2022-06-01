@@ -32,12 +32,12 @@ let geoJsonData = [
 	},
 	{
 		path: 'data/SJ_Joined.geojson',
-		mfi: 'sccmhv2020_MedianValue',
+		mfi: 'sccmhi2020_MHI',
 		code: 685
 	},
 	{
-		path: 'data/LAcounty_all.geojson',
-		mfi: 'LAcounty_census-joined-mhi_1990_LAcounty_mhi_1990_MEDIANHOUSEHOLDINCOME_1990',
+		path: 'data/LA-census-joined.geojson',
+		mfi: 'LA_mfi_2020_MEDIANFAMILYINCOME_2020',
 		code: 415
 	}
 ];

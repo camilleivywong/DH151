@@ -17,7 +17,7 @@ body {
 	display: grid;
 	grid-template-rows: 100px 60px 1fr; 
 	/* 30px; */
-	grid-template-columns: 400px 1fr;
+	grid-template-columns: 625px 1fr;
 	grid-template-areas: 
 	"header header"
 	"navigation navigation"
@@ -65,7 +65,7 @@ body {
 .sidebar {
 	color: #44403b;
 	grid-area: sidebar;
-	padding:10px;
+	padding:0px;
 	background-color: #fff2de;
 	overflow: auto;
 	padding-top: 0px;

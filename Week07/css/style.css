@@ -15,21 +15,22 @@ p {
 
 body {
 	display: grid;
-	grid-template-rows: 60px 60px 1fr 40px;
-	grid-template-columns: 300px 1fr;
+	grid-template-rows: 80px 60px 1fr;
+	grid-template-columns: 1fr 600px;
 	grid-template-areas: 
 	"header header"
 	"navigation navigation"
-	"sidebar content"
-	"footer footer";
+	"content sidebar"
+	/* "footer footer"; */
 }
 
 
 .header {
 	grid-area: header;
-	text-align: center;
-	padding:10px;
+	/* text-align: center; */
+	padding:20px;
 	background-color: #333;
+	/* background-color: white; */
 	color: white;
 	font-size: 2em;
 	font-family: Arial, Helvetica, sans-serif;
@@ -37,10 +38,11 @@ body {
 
 .navigation {
 	grid-area: navigation;
-	text-align: center;
+	/* text-align: center; */
 	display: inline-block;
-	padding:10px;
+	padding:2px;
 	background-color: #333;
+	/* background-color: white; */
 	color: white;
 	font-size: 1em;
 	font-family: Arial, Helvetica, sans-serif;
@@ -62,8 +64,10 @@ body {
 .sidebar {
 	color: white;
 	grid-area: sidebar;
-	padding:10px;
+	/* padding:10px; */
+	padding-left: 5px;
 	background-color: #555;
+	/* background-color: white; */
 	overflow: auto;
 }
 
@@ -106,8 +110,9 @@ body {
 }
 
 .map-item {
-    border: 1px solid #333;
-    padding: 10px;
+    display: inline-block;
+	border: 1px solid #333;
+    padding: 15px;
     background-color: #111;
 	font-family: Arial, Helvetica, sans-serif;
 	cursor: pointer;
